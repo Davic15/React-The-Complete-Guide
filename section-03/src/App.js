@@ -5,6 +5,7 @@
 //* With react we can generate out HTML without write too much code.
 //* New Component in new files
 //* The App component will render into single HTML page. the other components will come after App component
+import NewExpense from './components/NewExpense/NewExpense';
 import Expenses from './components/Expenses/Expenses';
 
 const App = () => {
@@ -37,7 +38,7 @@ const App = () => {
   //* Send data (props), in the component we can access them with props.title, props.amount, props.date
   return (
     <div>
-      <h2>Let's get started!</h2>
+      <NewExpense />
       <Expenses items={expenses}/>
     </div>
   );
