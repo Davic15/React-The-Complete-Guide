@@ -35,10 +35,16 @@ const App = () => {
       date: new Date(2022, 0, 31)
     }
   ];
+
+  const addExpenseHandler = expense => {
+    console.log('In App.js');
+    console.log(expense)
+  }
+
   //* Send data (props), in the component we can access them with props.title, props.amount, props.date
   return (
     <div>
-      <NewExpense />
+      <NewExpense onAddExpense={addExpenseHandler}/>
       <Expenses items={expenses}/>
     </div>
   );
