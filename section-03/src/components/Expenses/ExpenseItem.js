@@ -7,7 +7,7 @@ import ExpenseDate from './ExpenseDate';
 import Card from '../UI/Card';
 import './ExpenseItem.css';
 
-function ExpenseItem(props) {
+const ExpenseItem = (props) => {
     //* JavaScript (normal) code
     //* Hard coded data
     /*const expenseDate = new Date(2022, 2, 24).toDateString();

@@ -7,7 +7,7 @@
 //* The App component will render into single HTML page. the other components will come after App component
 import Expenses from './components/Expenses/Expenses';
 
-function App() {
+const App = () => {
   const expenses = [
     {
       id: 'e1',
