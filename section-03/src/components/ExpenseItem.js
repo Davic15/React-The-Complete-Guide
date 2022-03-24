@@ -3,15 +3,28 @@
 //* You must have only one root tag for every return.
 //* It looks like HTML but it is not.
 //* Under the hood this is JavaScript.
+import ExpenseDate from './ExpenseDate';
 import './ExpenseItem.css';
 
-function ExpenseItem() {
+function ExpenseItem(props) {
+    //* JavaScript (normal) code
+    //* Hard coded data
+    /*const expenseDate = new Date(2022, 2, 24).toDateString();
+    const expenseTitle = 'Car Insurance';
+    const expenseAmout = 294.67;*/
+    //* We can replace the hard coded data with variables or JavaScript expression inside {}
+    //* props, key/value pair
+    /*
+    const month = props.date.toLocaleString('en-US', {month: 'long'});
+    const day = props.date.toLocaleString('en-US', {day: '2-digit'});
+    const year = props.date.getFullYear();*/
+    //* We pass props from parent to child components
     return ( 
         <div className='expense-item'>
-            <div>March 28th 2021</div>
+            <ExpenseDate date={props.date} />
             <div className='expense-item__description'>
-                <h2>Car Insurance</h2>
-                <div className='expense-item__price'>$294.67</div>
+                <h2>{props.title}</h2>
+                <div className='expense-item__price'>{props.amount}</div>
             </div>
         </div>
     );
