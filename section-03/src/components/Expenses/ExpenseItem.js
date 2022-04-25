@@ -46,14 +46,16 @@ const ExpenseItem = (props) => {
 
     //* This function returns JSX
     return ( 
-        <Card className='expense-item'>
-            <ExpenseDate date={props.date} />
-            <div className='expense-item__description'>
-                <h2>{title}</h2>
-                <div className='expense-item__price'>{props.amount}</div>
-            </div>
-            <button onClick={clickHanlder}>Change Title</button>
-        </Card>
+        <li>
+            <Card className='expense-item'>
+                <ExpenseDate date={props.date} />
+                <div className='expense-item__description'>
+                    <h2>{title}</h2>
+                    <div className='expense-item__price'>{props.amount}</div>
+                </div>
+                <button onClick={clickHanlder}>Change Title</button>
+            </Card>
+        </li>
     );
 }
 
