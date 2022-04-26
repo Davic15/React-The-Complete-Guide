@@ -34,7 +34,7 @@ const ExpenseItem = (props) => {
 
     //* React.js will just draw this component when runs for the first time, not if we click it.
     //* To modify the values we need to import useState
-    const clickHanlder = () => {
+    /*const clickHandlder = () => {
         //* This code doesn't update the title, becuase React.js doesn't work in this way.
         //* title = 'New Value';
         //* To change a value when we call setTitle, it won't get a new value but the function where is call, is executes again. 
@@ -42,7 +42,7 @@ const ExpenseItem = (props) => {
         //* If we need to show/change date we need to use states. (only in this component, not other components).
         setTitle('Updated!');
         console.log(title);
-    }
+    }*/
 
     //* This function returns JSX
     return ( 
