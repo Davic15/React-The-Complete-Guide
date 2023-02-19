@@ -4,3 +4,5 @@
     - Rendering content under certain conditions.
 
 ## Rendering Lists of data.
+
+## Checking project in Section 3 folder.
