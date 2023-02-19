@@ -74,7 +74,7 @@
 ## A First summary.
     - Review about written above.
 
-## A closet look at JSX.
+## A closer look at JSX.
     - JSX is the way to write code in React.
     - It is a mix of JavaScript and HTML.
     - With out JSX we should write more cryptic code, hard to read.
@@ -84,3 +84,4 @@
     - We need organize the components in sub folders.
     - General UI components.
     - Feature specific components.
+

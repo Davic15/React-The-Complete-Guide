@@ -25,4 +25,22 @@
     - States are independent, even if we create many components.
     - Use const with useState works well because, we are not assigning a new value with equal.
 
-## Adding Form Inputs
+## Using one state Instead (and what's better).
+    - We can have many states of our form.
+    - We can do it in one state instead of three states, we can use and object as initial value and work with it.
+
+## Updating state that depends on the previous state.
+    - We can use an arrow function to update the new value keeping the previous value.
+
+## Adding two-way binding.
+    - With the attribute value in the HTML tag.
+
+## Child-to-Parent component communication (bottom-up).
+    - How to pass data from a child component to the Parent component.
+    - We can use a function from the parent component to the child component, and we can use it in the child component that function to update the parent component.
+
+## Lifting the state up.
+    - App
+        - Expenses (Data/State is needed here).
+        - New Expense (Data/State is generated here).
+    - Lifting the state up (moving data from child to parent component).
