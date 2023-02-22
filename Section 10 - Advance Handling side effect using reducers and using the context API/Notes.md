@@ -23,3 +23,70 @@
     - It will run depending of the dependecy, could run once, or many times.
 
 ## useEffect and Dependencies.
+    - Side Effect when the user types anything.
+
+## What to add and not to add as dependencies
+    - Don't add state of a function.
+    - Don't need to add built-in API or functions
+    - Don't need to add variables or functions, defined outside of our component.
+
+## Using the effect Cleanup function.
+    - We can return a function.
+
+## useEffect summary.
+    - useEffect and useState are the most used hooks.
+    - If we don't give it a argument, it will run for every change of state.
+
+## Introducing useReducer and Reducers in General.
+    - Sometimes we have more complex states, for example, if it got multiple states, multiple ways of changing it or dependencies to other states.
+    - useState() then often becomes hard or error-prone to use, it's easy to write bad, inefficient or buggy code in such scenarios.
+    - useReducer() can be used as a replacement for useSate() if you need "more powerful state management".
+    - Update a state that depends of other state.
+
+## Using the useReducer() hook
+    - It returns an array with two values.
+        - Latest state snapshot.
+        - Function to update the snapshot.
+    - Reducer function is a function that is triggered automatically once an action is dispatched.
+    - The initial state.
+    - Function to set the initial state programmatically.
+    - The reducer function is written outside the component.
+
+## useReducer vs useState for state management.
+    - We will know when to use useState and useReducer.
+    - useState
+        - The main state management tool.
+        - Great for independent pieces of state / data.
+        - Great if state updates are easy and limited to a few kinds of updated.
+    - useReducer 
+        - Great if you need more power.
+        - Should be considered if you have related pieces of state/data.
+        - Can be helpful if you have more complex sate updates.
+
+## Introducing React Context (Context API).
+    - Share information to any component, even when they don't have a direct connection.
+    - Using props we need to send them up to the main component and later move it the component that is required.
+    - With React Context we can create a context to any information and move it to other component in an easier way.
+
+## Using the React Context API.
+    - To use it.
+        - We need to provide it.
+        - We need to consume it.
+    - Wrap all the components that listen that context.
+        - All main and inner components will have access to the context.
+
+## useContext hook.
+    - A bit easier than normal Context.
+
+## Making context dynamic.
+    - props are to pass data to components.
+    - context is to log in or log out.
+
+## Building and using a custom context provider component.
+    - We can create a context to handle login and log out.
+
+## React context limitations.
+    - React context is not optimized for high frequency changes.
+
+## Learning the Rules of Hooks.
+    - 
