@@ -10,3 +10,13 @@
     - Where should side-effect and async task be executed?.
         - Inside the component (useEffect).
         - Inside the action creators.
+
+## Redux and Asyn Code.
+    - Where shoule side effects and async tasks be executed?
+        - Inside component (useEffect).
+        - Inside the action creators.
+
+## Frontend code vs Backend code.
+    - Backend does a lot of work (transform data and stores data).
+    - Send data and receive + response (less code on the frontend, ahead of the reducer).
+    
