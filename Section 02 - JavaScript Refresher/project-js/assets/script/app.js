@@ -30,3 +30,14 @@ console.log(index);
 const editedHobbies = hobbies.map((item) => ({ text: item }));
 
 console.log(editedHobbies);
+
+const { name, age } = {
+    name: 'David',
+    age: '35',
+};
+
+console.log(name, age);
+
+const moreHobbies = ['Reading'];
+const mergedHobbies = [...moreHobbies, 'hola'];
+console.log(mergedHobbies);

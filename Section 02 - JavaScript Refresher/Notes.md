@@ -84,3 +84,36 @@
 
     - Array.
         - const ['fistName', 'lastName'] = ['David', 'Macias']
+    - Objects.
+        - const {name, age} = {name: 'David', age: 35}
+
+## The Spread Operator
+
+    - It adds the values from the previous arrays and add the new ones.
+    - The spread operator looks like ...
+
+## Revisiting Control Structures
+
+    - If condition, if - else condition, if else if else condition.
+    - for loop
+        - Arrays: for (const hobby of hobbiesArray)
+
+## Manipulating the DOM - Not with React!
+
+    - React will do it for us.
+    - Example querySelector, we won't use it.
+
+## Using functions as Values
+
+    - Store functions in variables (normal functions or arrow functions).
+    - We can pass functions are arguments to another funtion.
+
+## Defining Functions Inside of Functions
+
+    - Functions can have other functions inside their body.
+
+## Reference vs Primitive Values
+
+    - Reference values, the code access the data in memory.
+    - Primitie values, the code access to the value directly.
+    - Can define reference values as const and we can add them using methods, but it can't be assign using the = sign.
