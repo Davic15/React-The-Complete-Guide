@@ -32,8 +32,6 @@ export const ExpenseForm = (props) => {
         // setUserInput((prevState) => {
         //     return { ...prevState, enteredTitle: e.target.value };
         // });
-
-        console.log(e.target.value);
     };
 
     const amountChangeHandler = (e) => {
@@ -42,7 +40,6 @@ export const ExpenseForm = (props) => {
         //     ...userInput,
         //     enteredAmount: e.target.value,
         // });
-        console.log(e.target.value);
     };
 
     const dateChangeHandler = (e) => {
@@ -51,14 +48,13 @@ export const ExpenseForm = (props) => {
         //     ...userInput,
         //     enteredDate: e.target.value,
         // });
-        console.log(e.target.value);
     };
 
     const submitHandler = (e) => {
         e.preventDefault();
         const expenseData = {
             title: enteredTitle,
-            amount: enteredAmount,
+            amount: +enteredAmount,
             date: new Date(entedDate),
         };
 
@@ -102,6 +98,9 @@ export const ExpenseForm = (props) => {
                 </div>
             </div>
             <div className='new-expense__actions'>
+                <button type='button' onClick={props.onCancel}>
+                    Cancel
+                </button>
                 <button type='submit'>Add Expense</button>
             </div>
         </form>
