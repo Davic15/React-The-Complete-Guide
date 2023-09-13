@@ -8,10 +8,11 @@
     - Managing more complex state with reducers.
     - Managing app-wide or component-wide state with context.
 
-## What are side effects and introducion useEffect.
+## What are side effects and introducting useEffect.
 
     - Main Job: Render UI and React to user input.
-        - Evaluate and Render JSX, manage state and props, reevalue components.
+        - Evaluate and Render JSX, manage state and props, re-evalue components.
+        - React to user events.
     - Side Effects: anything else
         - Store data in browser storage, send http requests to backend servers, timers.
         - These are out of the normal component function.
@@ -19,7 +20,7 @@
         - A function that should be executed after every component evaluation if the specified dependencies changed.
             - Side Effect code goes here.
         - Dependencies of this effect, the function only runs if the dependencies changed.
-            - Specify your dependecies of your function here.
+            - Specify your dependencies of your function here.
 
 ## Using the useEffect() hook.
 
@@ -53,6 +54,12 @@
 
 ## Using the useReducer() hook
 
+    - const [state, dispatchFn] = useReducer (reduceFn, initialState, initFn);
+        - state: The state snapshot used in the component render cycle
+        - dispatchFn: A function that can be used to dispatch a new action (i.e. trigger an update of the state).
+        - reducerFn: (prevStatem action) => newState: A function that is triggered automatically once an action is dispatched (via dispatchFn()) - it received the latest state snapshot and should return the new, update state.
+        - initialState: The initial state.
+        - initFn: A function to set the initial state programmatically.
     - It returns an array with two values.
         - Latest state snapshot.
         - Function to update the snapshot.
@@ -106,4 +113,4 @@
 
 ## Learning the Rules of Hooks.
 
-    -
+    - PDF file attached here.
