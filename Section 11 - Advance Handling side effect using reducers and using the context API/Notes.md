@@ -52,7 +52,7 @@
     - useReducer() can be used as a replacement for useSate() if you need "more powerful state management".
     - Update a state that depends of other state.
 
-## Using the useReducer() hook
+## Using the useReducer() hook.
 
     - const [state, dispatchFn] = useReducer (reduceFn, initialState, initFn);
         - state: The state snapshot used in the component render cycle
@@ -110,7 +110,23 @@
 ## React context limitations.
 
     - React context is not optimized for high frequency changes.
+    - Don't use for large applications.
 
 ## Learning the Rules of Hooks.
 
     - PDF file attached here.
+    - Only call React Hooks in React Functions.
+        - React components functions.
+        - Custom hooks.
+    - Only call React hooks at the top level.
+        - Don't call them in nested functions.
+        - Don't call them in any block statements.
+    - Extra rule for useEffect(), always add eveything you refer to inside of useEffect() as a dependency.
+
+## Refactoring an Input Component.
+
+    - Create a new Input component and move the inputs there.
+
+## Diving into "Forward Refs".
+
+    - Change the input to accept refs (useRef) from outside.
